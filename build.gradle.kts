@@ -9,12 +9,11 @@
 plugins {
    java
    kotlin("jvm") version "1.4.30"
-   id("com.github.johnrengelman.shadow") version "6.1.0"
    `maven-publish` // Jitpack
 }
 
 group = "io.itsusinn.forward"
-version = "0.0.1"
+version = "0.0.2"
 
 val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
 compileKotlin.kotlinOptions.jvmTarget = "1.8"
@@ -22,6 +21,7 @@ compileKotlin.kotlinOptions.jvmTarget = "1.8"
 repositories {
    mavenCentral()
 }
+java.withSourcesJar()
 
 dependencies {
    implementation(kotlin("stdlib"))
@@ -36,6 +36,7 @@ dependencies {
 
    compileOnly(Dependency.Okhttp)
 }
+
 object Versions {
    const val Kotlin = "1.4.30"
    const val Okhttp = "4.9.0"

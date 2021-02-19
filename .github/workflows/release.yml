@@ -22,7 +22,7 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Gradle build
-        run: ./gradlew build shadowJar
+        run: ./gradlew build
 
       - name: Cleanup Gradle Cache
         # Remove some files from the Gradle cache, so they aren't cached by GitHub Actions.
@@ -35,16 +35,9 @@ jobs:
         id: package
         run: |
           mkdir packages
-          mv build/libs/*all.jar packages/
+          mv build/libs/*.jar packages/
           cd packages
-          
-          for file in `ls|grep .jar`
-          do
-            newfile=`echo $file | sed 's/-all//g'`
-            echo $newfile
-            mv $file $newfile
-          done
-          
+
           for file in `ls|grep .jar`
           do
             var1=`echo $file | sed 's/.jar//g'`

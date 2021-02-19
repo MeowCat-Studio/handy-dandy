@@ -8,7 +8,7 @@
  */
 plugins {
    kotlin("jvm") version "1.4.30"
-   id("maven-publish")
+   `maven-publish` // Jitpack
 }
 
 group = "io.itsusinn.forward"

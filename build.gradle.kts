@@ -13,16 +13,16 @@ plugins {
    `maven-publish` // Jitpack
 }
 
-group = "com.github.message_forwarding"
-val moduleName = "$group.handy_dandy"
+group = "io.message-forwarding.client"
 
-version = "0.0.4"
+version = "0.0.5"
 
 val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
 compileKotlin.kotlinOptions.jvmTarget = "1.8"
 
 repositories {
    mavenCentral()
+   mavenLocal()
 }
 
 dependencies {
@@ -80,5 +80,3 @@ object Dependency {
    const val Okhttp = "com.squareup.okhttp3:okhttp:${Versions.Okhttp}"
    const val Slf4j = "org.slf4j:slf4j-api:${Versions.Slf4j}"
 }
-
-java.withSourcesJar()

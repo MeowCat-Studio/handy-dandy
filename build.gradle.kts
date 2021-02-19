@@ -7,7 +7,9 @@
  *       https://opensource.org/licenses/LGPL-3.0
  */
 plugins {
+   java
    kotlin("jvm") version "1.4.30"
+   id("com.github.johnrengelman.shadow") version "6.1.0"
    `maven-publish` // Jitpack
 }
 

@@ -9,12 +9,14 @@
 plugins {
    java
    kotlin("jvm") version "1.4.30"
+   maven
    `maven-publish` // Jitpack
 }
 
-group = "io.itsusinn.forward"
+group = "com.github.message_forwarding"
+val moduleName = "$group.handy_dandy"
 
-version = "0.0.3"
+version = "0.0.4"
 
 val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
 compileKotlin.kotlinOptions.jvmTarget = "1.8"

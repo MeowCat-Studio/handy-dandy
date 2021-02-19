@@ -36,7 +36,7 @@ jobs:
         run: |
           mkdir packages
           mkdir sources
-          mv build/libs/*-source.jar sources/
+          mv build/libs/*-sources.jar sources/
           mv build/libs/*.jar packages/
           cd packages
 

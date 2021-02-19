@@ -61,4 +61,4 @@ jobs:
           title: "CI automatical build ${{ steps.package.outputs.VERSION }}"
           files: |
             packages/*.jar
-            source/*.jar
+            sources/*.jar

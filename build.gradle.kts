@@ -13,7 +13,8 @@ plugins {
 }
 
 group = "io.itsusinn.forward"
-version = "0.0.2"
+
+version = "0.0.3"
 
 val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
 compileKotlin.kotlinOptions.jvmTarget = "1.8"
@@ -21,7 +22,6 @@ compileKotlin.kotlinOptions.jvmTarget = "1.8"
 repositories {
    mavenCentral()
 }
-java.withSourcesJar()
 
 dependencies {
    implementation(kotlin("stdlib"))
@@ -78,3 +78,5 @@ object Dependency {
    const val Okhttp = "com.squareup.okhttp3:okhttp:${Versions.Okhttp}"
    const val Slf4j = "org.slf4j:slf4j-api:${Versions.Slf4j}"
 }
+
+java.withSourcesJar()

@@ -1,3 +1,3 @@
 # handy-dandy
 
-[![](https://jitpack.io/v/meowcat-studio/handy-dandy.svg)](https://jitpack.io/#meowcat-studio/handy-dandy)
+[![](https://jitpack.io/v/org.meowcat/handy-dandy.svg)](https://jitpack.io/#org.meowcat/handy-dandy)

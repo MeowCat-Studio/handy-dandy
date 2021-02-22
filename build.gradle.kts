@@ -15,7 +15,7 @@ plugins {
 
 group = "io.message-forwarding.client"
 
-version = "0.0.5"
+version = "0.1.0"
 
 val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
 compileKotlin.kotlinOptions.jvmTarget = "1.8"
